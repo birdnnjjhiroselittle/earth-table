@@ -106,6 +106,21 @@ The full math is in the sister project [Tabemono Subete AI: Integrated Optimizat
 
 ---
 
+## 🏝️ Starting small: cities, islands, small nations
+
+Large countries are too complex, so we start with **cities, islands and small nations, whose inflows and outflows are easy to measure**, and optimize the game, logistics and people flows within each unit.
+
+Will local optimization become a **tragedy of the commons**? Reducing waste is good for everyone. The tragedy happens at the **seams** between units: pushing waste outward, hoarding, competing for shared logistics or fishing grounds, and crowding.
+
+- Put shadow prices or caps **only** on shared resources (ferry slots, cold storage, fishing grounds, CO2), so the sum of local optima equals the global optimum
+- Count waste beyond the boundary (at suppliers and destinations)
+- **Nested self-governance** based on Ostrom's principles, crisis mutual-aid agreements, reputation
+- In the game, the **Island & City League**: rankings combine your own score with how much you helped your neighbors
+
+👉 Details: [docs/local-units.en.md](docs/local-units.en.md)
+
+---
+
 ## 🛡️ Principles
 
 - **Neither the AI nor the game decides.** They only show options and predicted outcomes. People in each country and region decide
@@ -134,7 +149,8 @@ The full math is in the sister project [Tabemono Subete AI: Integrated Optimizat
 | Stage | Description |
 |---|---|
 | 0 | Publish the concept and gather collaborators (researchers, game developers, farmers, logistics, healthcare, government) |
-| 1 | Small twin: a simple game of one town's food flows, plus a Hunt & Harvest pilot |
+| 1 | Small twin: a simple game of one island's or city's food flows, plus a Hunt & Harvest pilot |
+| 1.5 | Island & City League: connect neighboring islands and cities to test seam problems (pushing waste outward, hoarding, shared resources) and their fixes, then move on to a small nation |
 | 2 | National twin: recreate one country from public statistics, weather and logistics data. Players and AI search for strategies |
 | 3 | Earth Twin: recreate the world from FAO and satellite data, with an international player community |
 | 4 | Test game-discovered strategies in pilots around the world and feed the results back into the twin |
@@ -143,6 +159,7 @@ The full math is in the sister project [Tabemono Subete AI: Integrated Optimizat
 
 - [Game design and bridges to reality](docs/design.en.md)
 - [The action bridge: Hunt & Harvest](docs/action-bridge.en.md)
+- [Starting small: cities, islands, small nations — and the tragedy of the commons](docs/local-units.en.md)
 - [Sources](docs/sources.md)
 
 ## License
